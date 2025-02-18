@@ -6,3 +6,7 @@ const quotes = [
     "Trust God",
     "You win when you help others win"
 ]
+
+const usedIndexes = new Set()
+
+function generateQuote()
