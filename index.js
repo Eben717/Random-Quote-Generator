@@ -10,4 +10,6 @@ const quotes = [
 const usedIndexes = new Set()
 const quoteElement = document.getElementById('quote')
 
-function generateQuote()
+function generateQuote() {
+    quoteElement.innerHTML = "hello world"
+}
