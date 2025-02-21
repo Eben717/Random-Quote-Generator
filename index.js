@@ -10,9 +10,16 @@ const quotes = [
 const usedIndexes = new Set()
 const quoteElement = document.getElementById('quote')
 
+//quotes generator
+while (true) {
 function generateQuote() {
     const randomIdx = Math.floor(Math.random() * quotes.length)
+
+    if (usedIndexes.has(randomIdx)) continue
+
     const quote = quotes[randomIdx]
-    quoteElement.innerHTML = quote
-    ]
+    quoteElement.innerHTML = quote;
+    usedIndexes.add(randomIdx)
+    break
+    }
 }
