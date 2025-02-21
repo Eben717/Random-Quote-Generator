@@ -11,5 +11,5 @@ const usedIndexes = new Set()
 const quoteElement = document.getElementById('quote')
 
 function generateQuote() {
-    quoteElement.innerHTML = "hello world"
+    const randomIdx = Math.floor(Math.random() * quotes.length)
 }
