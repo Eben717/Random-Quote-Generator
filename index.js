@@ -12,4 +12,7 @@ const quoteElement = document.getElementById('quote')
 
 function generateQuote() {
     const randomIdx = Math.floor(Math.random() * quotes.length)
+    const quote = quotes[randomIdx]
+    quoteElement.innerHTML = quote
+    ]
 }
