@@ -11,8 +11,9 @@ const usedIndexes = new Set()
 const quoteElement = document.getElementById('quote')
 
 //quotes generator
-while (true) {
+
 function generateQuote() {
+    while (true) {
     const randomIdx = Math.floor(Math.random() * quotes.length)
 
     if (usedIndexes.has(randomIdx)) continue
